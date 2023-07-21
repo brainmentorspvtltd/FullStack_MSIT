@@ -1,0 +1,152 @@
+var a;
+undefined
+a;
+undefined
+typeof a;
+'undefined'
+a=100;
+100
+typeof a;
+'number'
+a="Amit";
+'Amit'
+typeof a;
+'string'
+a=true;
+true
+typeof a;
+'boolean'
+a=1000000000000000;
+1000000000000000
+typeof a;
+'number'
+a=100.20;
+100.2
+typeof a;
+'number'
+a=1;
+1
+typeof a;
+'number'
+a=10;
+10
+a=a/0;
+Infinity
+a=10;
+
+10
+typeof a;
+'number'
+a=a/0;
+Infinity
+typeof a;
+'number'
+a;
+Infinity
+isFinite(a);
+false
+isFinite(a)?a:"Some Problem";
+'Some Problem'
+a=10;
+10
+a+ 20;
+30
+a+ "20";
+'1020'
+"Amit " +"Srivastava"
+'Amit Srivastava'
+"Amit " -"Srivastava"
+NaN
+100 + undefined;
+NaN
+typeof NaN;
+'number'
+a = 10 + undefined;
+NaN
+a;
+NaN
+typeof a;
+'number'
+isNaN(a)?0:a;
+0
+a=Number.MAX_SAFE_INTEGER;
+9007199254740991
+++a;
+9007199254740992
+++a;
+9007199254740992
+++a;
+9007199254740992
+++a;
+9007199254740992
+++a;
+9007199254740992
+a = 9007199254740992n;
+9007199254740992n
+typeof a;
+'bigint'
+a = a + 645654432342n;
+9007844909173334n
+a = BigInt("634634645765756756756765765");
+634634645765756756756765765n
+10000 + 7777n;
+VM1244:1 Uncaught TypeError: Cannot mix BigInt and other types, use explicit conversions
+    at <anonymous>:1:7
+(anonymous) @ VM1244:1
+a = "Amit";
+'Amit'
+typeof a;
+'string'
+a = 'Amit';
+'Amit'
+typeof a;
+'string'
+a='A';
+'A'
+typeof a;
+'string'
+a = "Let's Do It ";
+"Let's Do It "
+a = `hfdkjgdfkgkfdhkjgh
+lkhfkghdkjhjk
+hgjdfjkfhd`;
+'hfdkjgdfkgkfdhkjgh\nlkhfkghdkjhjk\nhgjdfjkfhd'
+a =10;
+10
+var b = 20;
+undefined
+"A is "+a+" and B is "+b;
+'A is 10 and B is 20'
+`A is ${a} and B is ${b}`; // String Interpolation ES6 (2015)
+'A is 10 and B is 20'
+var att = true;
+undefined
+typeof att;
+'boolean'
+10 + true;
+11
+qq = 10000;
+10000
+typeof qq;
+'number'
+function show(){
+    var t=10;
+    var t=20;
+    var t = 30;
+    gggg = 10000;
+    console.log(t, gggg);
+}
+undefined
+show();
+VM2124:6 30 10000
+undefined
+t;
+VM2155:1 Uncaught ReferenceError: t is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM2155:1
+gggg;
+10000
+gggg;
+10000
+window.gggg;
+10000
