@@ -1,0 +1,56 @@
+Immutable Type / Value Type
+
+Variables those store Value.
+
+a) number - (0-9) , Decimal , Infinity (Error Value) , NaN (Error Value)
+Helper Methods isNaN, isFinite, parseInt, parseFloat
+
+b) String 
+“”
+‘’
+``
+`A is ${a}` String Interpolation ES6 (2015)
+String Methods
+
+c) boolean - true (1) , false (0)
+
+
+Object Type / Reference Type / Mutable Type
+a) Array
+b) Object
+c) Function
+
+Var x = [10,20];
+Var y = x;
+y[0] = 1000;
+
+Var a = 10;
+Var b = a;
+B = b + 20
+
+
+
+Q1. Why dot use with Value Type?
+Q2. What is null value and where we use it? Hint : typeof
+Q3. Typeof ?
+Q4. Null vs undefined
+Q5 . == vs ===
+Q6. Prime Number Compute Function
+Q7. ArmStrong Number Compute Function
+Q8. add() - 0
+add(10) - 10
+add(10,20) - 30
+add(10,”20”) - 30
+add(10,”ten”) - 10
+add(10, NaN) - 10
+add(10, 20, 30 ,40, 50)- 150
+
+
+Chromium —> Chrome Canary —> Chrome
+JavaScript Modern Name (ES)
+ECMA Script
+Operator (**) Exponent (ES8 (2017))
+Automatic TypeCasting
+String + Number = String
+Number + String  = String
+Number - String = Number
