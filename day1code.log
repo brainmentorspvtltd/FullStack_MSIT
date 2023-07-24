@@ -1,0 +1,169 @@
+var x;
+undefined
+x = 10;
+10
+typeof x;
+'number'
+typeof undefined;
+'undefined'
+a=10.20;
+10.2
+typeof undefined;
+'undefined'
+typeof a;
+'number'
+a=1;
+1
+typeof a;
+'number'
+a=1111111111111;
+1111111111111
+typeof a;
+'number'
+a = 10 /0;
+Infinity
+typeof a;
+'number'
+a= 10- "ten";
+NaN
+a + 1000;
+NaN
+isNaN(a);
+true
+isNaN(a)?0:a;
+0
+a = 10/0;
+Infinity
+isFinite(a);
+false
+isFinite(a)?a:0;
+0
+a= "100";
+'100'
+a + 200;
+'100200'
+parseInt(a) + 200;
+300
+parseFloat("100.20") + 20;
+120.2
+a;
+'100'
+a + 100;
+'100100'
+parseInt(a) + 200;
+300
+a - 10;
+90
+a - "ten"
+NaN
+a * 10;
+1000
+a;
+'100'
+a**3;
+1000000
+a = 'Amit';
+'Amit'
+typeof a;
+'string'
+a = "Amit";
+'Amit'
+typeof a;
+'string'
+a=`gdfgkljdfglkf
+ghdkj
+ghdsjkf
+fhgskdj`;
+'gdfgkljdfglkf\nghdkj\nghdsjkf\nfhgskdj'
+console.log(a);
+VM986:1 gdfgkljdfglkf
+ghdkj
+ghdsjkf
+fhgskdj
+undefined
+typeof console;
+'object'
+typeof console.log
+'function'
+var x = 10;
+undefined
+var y = 20;
+undefined
+`X is ${x} and y is ${y}`; // String Interpolation
+'X is 10 and y is 20'
+var att =true;
+undefined
+typeof att;
+'boolean'
+a = 'amit';
+'amit'
+a.toUpperCase();
+'AMIT'
+var age = 21;
+undefined
+typeof age;
+'number'
+var amit = {id:1001, name:};
+VM1404:1 Uncaught SyntaxError: Unexpected token '}'
+var amit = {id:1001, name:'Amit', address:'Delhi'};
+undefined
+typeof amit;
+'object'
+var temp = [10,20,30,40,11, 22,44,21,20];
+undefined
+temp[0];
+10
+temp[1];
+20
+var temp = {'delhi':43, 'mumbai':33};
+undefined
+temp['delhi'];
+43
+var temp = [10,20,30,40,11, 22,44,21,20];
+undefined
+typeof temp;
+'object'
+var e = {id:1001, name:}
+VM1751:1 Uncaught SyntaxError: Unexpected token '}'
+var e = {id:1001, name:'Amit'};
+undefined
+typeof e;
+'object'
+var x = [10,20];
+undefined
+var y = x;
+undefined
+y;
+(2) [10, 20]
+x;
+(2) [10, 20]
+y[0] = 1000;
+1000
+y;
+(2) [1000, 20]
+x;
+(2) [1000, 20]
+var t = "Amit";
+undefined
+typeof t;
+'string'
+var s = [10,20];
+undefined
+s = null;
+null
+var a= 10;
+undefined
+a = null;
+null
+typeof (a);
+'object'
+typeof a;
+'object'
+a= 10;
+10
+b = "10";
+'10'
+a==b;
+true
+a===b;
+false
