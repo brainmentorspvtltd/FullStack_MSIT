@@ -1,0 +1,123 @@
+var x = 100;
+undefined
+x.toString();
+'100'
+x;
+100
+var arr  = [10,20,30];
+undefined
+typeof arr;
+'object'
+var g = 100;
+undefined
+typeof g;
+'number'
+var r = new Number(1200);
+undefined
+typeof r;
+'object'
+r;
+Number {1200}
+r.toString();
+'1200'
+function add(){
+    console.log("I am the Add ");
+}
+undefined
+add();
+VM411:2 I am the Add 
+undefined
+add(10,20);
+VM411:2 I am the Add 
+undefined
+add(10,"20");
+VM411:2 I am the Add 
+undefined
+add(10,"20", true);
+VM411:2 I am the Add 
+undefined
+add(10,"20", true, [10,20]);
+VM411:2 I am the Add 
+undefined
+add(10,"20", true, [10,20], function(){});
+VM411:2 I am the Add 
+undefined
+console.dir(add);
+VM589:1 ƒ add()arguments: nullcaller: nulllength: 0name: "add"prototype: {constructor: ƒ}[[FunctionLocation]]: VM411:1[[Prototype]]: ƒ ()[[Scopes]]: Scopes[1]
+undefined
+function add(){
+    console.log("I am the Add ", arguments.length);
+}
+undefined
+add(10,"20", true, [10,20], function(){});
+VM676:2 I am the Add  5
+undefined
+add();
+VM676:2 I am the Add  0
+undefined
+add(10);
+VM676:2 I am the Add  1
+undefined
+function add(){
+    console.log("I am the Add ", arguments.length, arguments instanceof Array);
+}
+undefined
+add(10);
+VM865:2 I am the Add  1 false
+undefined
+function add(){
+    // console.log("I am the Add ", arguments.length, arguments instanceof Array);
+    var sum = 0;
+    for(var i = 0; i<arguments.length ; i++){
+        sum = sum + arguments[i];
+    }
+    return sum;
+}
+undefined
+add(10,20,30);
+60
+add();
+0
+add(1,2,3,4,5,6,76,7);
+104
+add(1,2,3,4,5,6,"76",7);
+'21767'
+function add(){
+    // console.log("I am the Add ", arguments.length, arguments instanceof Array);
+    var sum = 0;
+    for(var i = 0; i<arguments.length ; i++){
+        sum = sum + parseInt(arguments[i]);
+    }
+    return sum;
+}
+undefined
+add(1,2,3,4,5,6,"76",7);
+104
+parseInt('one');
+NaN
+NaN + 111;
+NaN
+add(1,2,3,4,5,6,"one",7);
+NaN
+function add(){
+    // console.log("I am the Add ", arguments.length, arguments instanceof Array);
+    var sum = 0;
+    for(var i = 0; i<arguments.length ; i++){
+        sum = sum + isNaN(parseInt(arguments[i]))?0:parseInt(arguments[i]);
+    }
+    return sum;
+}
+undefined
+add(1,2,3,4,5,6,"one",7);
+7
+function add(){
+    // console.log("I am the Add ", arguments.length, arguments instanceof Array);
+    var sum = 0;
+    for(var i = 0; i<arguments.length ; i++){
+        sum = sum + (isNaN(parseInt(arguments[i]))?0:parseInt(arguments[i]));
+    }
+    return sum;
+}
+undefined
+add(1,2,3,4,5,6,"one",7);
+28

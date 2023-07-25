@@ -1,0 +1,92 @@
+var emp = {id:1001, name:'Ram'};
+undefined
+emp.id;
+1001
+emp['id'];
+1001
+var dhoni = {name:'MS Dhoni', age:40, 50:51,100:20};
+undefined
+dhoni.name;
+'MS Dhoni'
+dhoni.50;
+VM216:1 Uncaught SyntaxError: Unexpected number
+dhoni[50];
+51
+dhoni['name'];
+    
+'MS Dhoni'
+dhoni['full address'] = 'Delhi';
+'Delhi'
+dhoni;
+{50: 51, 100: 20, name: 'MS Dhoni', age: 40, full address: 'Delhi'}
+dhoni.full address;
+VM443:1 Uncaught SyntaxError: Unexpected identifier 'address'
+dhoni['full address'];
+'Delhi'
+var x = 'age';
+undefined
+dhoni.x;
+undefined
+dhoni;
+{50: 51, 100: 20, name: 'MS Dhoni', age: 40, full address: 'Delhi'}
+dhoni [x];
+40
+for(var key in dhoni){
+    console.log(key);
+}
+VM632:2 50
+VM632:2 100
+VM632:2 name
+VM632:2 age
+VM632:2 full address
+undefined
+for(var key in dhoni){
+    console.log(key, dhoni[key]);
+}
+VM685:2 50 51
+VM685:2 100 20
+VM685:2 name MS Dhoni
+VM685:2 age 40
+VM685:2 full address Delhi
+undefined
+var emp = {id:1001, name:'Amit';}
+VM714:1 Uncaught SyntaxError: Unexpected token ';'
+var emp = {id:1001, name:'Amit'};
+undefined
+typeof emp;
+'object'
+emp instanceof Object;
+true
+typeof Object;
+'function'
+var o = {};
+undefined
+var t = new Object();
+undefined
+o;
+{}
+t;
+{}
+var arr =[10,20,30];
+undefined
+arr instanceof Array;
+
+true
+arr instanceof Object;
+true
+var t = [10,20];
+undefined
+var tt = new Array(10);
+undefined
+tt;
+(10) [empty × 10]
+t;
+(2) [10, 20]
+typeof tt;
+'object'
+typeof t;
+'object'
+tt instanceof Array;
+true
+t instanceof Array;
+true

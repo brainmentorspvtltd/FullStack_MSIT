@@ -1,0 +1,10 @@
+var z = 100;
+undefined
+typeof z;
+'number'
+typeof (z);
+'number'
+typeof z;
+'number'
+typeof (((z)));
+'number'
