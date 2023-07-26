@@ -1,0 +1,101 @@
+function show(){
+    console.log("I am show ");
+}
+undefined
+show(10,20);
+VM67:2 I am show 
+undefined
+show("Amit");
+VM67:2 I am show 
+undefined
+show(true, [10,20]);
+VM67:2 I am show 
+undefined
+function show(){
+    console.log("I am show ", arguments.length);
+}
+undefined
+show(10,20);
+VM284:2 I am show  2
+undefined
+show();
+VM284:2 I am show  0
+undefined
+function show(){
+    console.log("I am show ", arguments.length, arguments instanceof Array);
+}
+undefined
+show(10,20,30);
+VM499:2 I am show  3 false
+undefined
+function show(){
+   // console.log("I am show ", arguments.length, arguments instanceof Array);
+    for(var i = 0; i<arguments.length; i++){
+        console.log(arguments[i]);
+    }
+}
+undefined
+show(10,20,30);
+VM649:4 10
+VM649:4 20
+VM649:4 30
+undefined
+show;
+ƒ show(){
+   // console.log("I am show ", arguments.length, arguments instanceof Array);
+    for(var i = 0; i<arguments.length; i++){
+        console.log(arguments[i]);
+    }
+}
+console.dir(show);
+VM763:1 ƒ show()arguments: nullcaller: nulllength: 0name: "show"prototype: {constructor: ƒ}[[FunctionLocation]]: VM649:1[[Prototype]]: ƒ ()[[Scopes]]: Scopes[1]
+undefined
+function show(...arg){
+    console.log("I am show ", arguments.length, arguments instanceof Array);
+    for(var i = 0; i<arg.length; i++){
+        console.log(arg[i]);
+    }
+}
+undefined
+show(10,20,30);
+VM780:2 I am show  3 false
+VM780:4 10
+VM780:4 20
+VM780:4 30
+undefined
+function show(...arg){
+    console.log("I am show ", arg.length, arg instanceof Array);
+    for(var i = 0; i<arg.length; i++){
+        console.log(arg[i]);
+    }
+}
+undefined
+show(10,20,30);
+VM855:2 I am show  3 true
+VM855:4 10
+VM855:4 20
+VM855:4 30
+undefined
+function show(...arg, ...q){
+    console.log("I am show ", arg.length, arg instanceof Array);
+    for(var i = 0; i<arg.length; i++){
+        console.log(arg[i]);
+    }
+}
+VM946:1 Uncaught SyntaxError: Rest parameter must be last formal parameter
+function show(a,b,c, ...q){
+    console.log(a, b, c, q)l
+   
+}
+VM1014:2 Uncaught SyntaxError: Unexpected identifier 'l'
+function show(a,b,c, ...q){
+    console.log(a, b, c, q);
+   
+}
+undefined
+show(1,2,3,100,200,300,400);
+VM1020:2 1 2 3 (4) [100, 200, 300, 400]
+undefined
+show([1,2],[100,200],[1000,2000],5345,534533,42342);
+VM1020:2 (2) [1, 2] (2) [100, 200] (2) [1000, 2000] (3) [5345, 534533, 42342]
+undefined

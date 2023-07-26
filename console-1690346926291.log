@@ -1,0 +1,80 @@
+function add(x,y){
+    return x + y;
+}
+undefined
+add(10,20);
+30
+add();
+NaN
+function add(x=0,y=0){
+    return x + y;
+}
+undefined
+add();
+0
+add(10);
+10
+add(10,20);
+30
+var arr =[10,20,30];
+undefined
+arr.length;
+3
+arr = null;
+null
+arr.length;
+VM331:1 Uncaught TypeError: Cannot read properties of null (reading 'length')
+    at <anonymous>:1:5
+(anonymous) @ VM331:1
+if(arr!=null){
+    console.log(arr.length);
+}
+undefined
+if(arr){
+    console.log("Array Present ", arr.length);
+}
+else{
+    console.log("Array is Not Present");
+}
+VM582:5 Array is Not Present
+undefined
+arr;
+null
+arr = undefined;
+undefined
+if(arr){
+    console.log("Array Present ", arr.length);
+}
+else{
+    console.log("Array is Not Present");
+}
+VM636:5 Array is Not Present
+undefined
+arr=[10,20];
+(2) [10, 20]
+if(arr){
+    console.log("Array Present ", arr.length);
+}
+else{
+    console.log("Array is Not Present");
+}
+VM684:2 Array Present  2
+undefined
+function add(x,y){
+    return x + y;
+}
+undefined
+add();
+NaN
+function add(x,y){
+    x = x || 0;
+    y = y || 0;
+    return x + y;
+}
+undefined
+add();
+0
+var o = {};
+undefined
+o.name;
+undefined
