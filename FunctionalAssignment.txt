@@ -1,0 +1,13 @@
+1. Create an Array of Salaries, Now do the Sum of Salaries who is greater than 10000.
+Hint : reduce function
+
+2. Get the Max Salary from the Array
+Hint : reduce function
+
+3. Count Those Salaries whose > 10000, note : don't use filter.
+Hint : reduce function
+
+4. Maintain an Array of Employees. (Array of Objects), Now Sort the Employee by Name and Salary.
+
+5. In Employee Salaries add 10% Tax in Each Employee Salary and Store in a new Array, So don't modify the Orginal Array.
+Hint : filter, map
