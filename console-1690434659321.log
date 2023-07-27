@@ -1,0 +1,150 @@
+function show(){
+    console.log("I am the Named Function ");
+}
+undefined
+show();
+VM84:2 I am the Named Function 
+undefined
+disp();
+function disp(){
+    console.log("I am the Disp ");
+}
+VM182:3 I am the Disp 
+undefined
+var a = 10;
+undefined
+var fn = function(){
+    console.log("I am the Anonymous Function / Function Expression ");
+}
+undefined
+typeof fn;
+'function'
+fn();
+VM367:2 I am the Anonymous Function / Function Expression 
+undefined
+//var fn2; // undefined
+fn2();
+var fn2 = function(){
+    console.log("I am the Anonymous Function / Function Expression ");
+}
+VM445:2 Uncaught TypeError: fn2 is not a function
+    at <anonymous>:2:1
+(anonymous) @ VM445:2
+window.show;
+ƒ show(){
+    console.log("I am the Named Function ");
+}
+show();
+VM84:2 I am the Named Function 
+undefined
+window.show();
+VM84:2 I am the Named Function 
+undefined
+function Customer(){
+    var show = function(){
+        console.log("Customer Show");
+    }
+    var add = function(){
+        console.log("Customer Add ");
+    }
+    return {add, show}
+}
+undefined
+window.Customer;
+ƒ Customer(){
+    var show = function(){
+        console.log("Customer Show");
+    }
+    var add = function(){
+        console.log("Customer Add ");
+    }
+    return {add, show}
+}
+add;
+VM755:1 Uncaught ReferenceError: add is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM755:1
+var obj =  Customer();
+undefined
+typeof obj;
+'object'
+obj.add();
+VM712:6 Customer Add 
+undefined
+obj.show();
+VM712:3 Customer Show
+undefined
+function Customer(){
+    // var show = function(){
+    //     console.log("Customer Show");
+    // }
+    // var add = function(){
+    //     console.log("Customer Add ");
+    // }
+    return {add: function(){
+        console.log("I am the Add ");
+    }, show: function(){
+        console.log("I am the show");
+    }}
+}
+undefined
+var a = function(){
+    console.log("Anonymous Fn ");
+}
+undefined
+typeof a;
+'function'
+a();
+VM1085:2 Anonymous Fn 
+undefined
+a;
+ƒ (){
+    console.log("Anonymous Fn ");
+}
+var a = function test(){
+    console.log("I am the Test ");
+}
+undefined
+a;
+ƒ test(){
+    console.log("I am the Test ");
+}
+test();
+VM1243:1 Uncaught ReferenceError: test is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM1243:1
+a();
+VM1211:2 I am the Test 
+undefined
+function Calc(){
+    var add = function(x, y){
+        return x + y;
+    }
+    var sub = function(x, y){
+        return x - y;
+    }
+    return [add, sub];
+}
+undefined
+var f = Calc();
+undefined
+f;
+(2) [ƒ, ƒ]0: ƒ (x, y)arguments: nullcaller: nulllength: 2name: "add"prototype: {constructor: ƒ}[[FunctionLocation]]: VM1366:2[[Prototype]]: ƒ ()[[Scopes]]: Scopes[1]1: ƒ (x, y)length: 2[[Prototype]]: Array(0)
+f[0](10,20);
+30
+f[1](10,20);
+-10
+function Calc(){
+    var add = function addition(x, y){
+        return x + y;
+    }
+    var sub = function subtraction(x, y){
+        return x - y;
+    }
+    return [add, sub];
+}
+undefined
+var t = Calc();
+undefined
+t;
+(2) [ƒ, ƒ]0: ƒ addition(x, y)1: ƒ subtraction(x, y)length: 2[[Prototype]]: Array(0)

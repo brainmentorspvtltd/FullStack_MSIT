@@ -1,0 +1,88 @@
+function add(x,y){
+    return x + y;
+}
+undefined
+const addition = (x,y)=>x+y;
+undefined
+typeof addition;
+'function'
+addition(10,20);
+30
+const addition2 = (x,y)=>{
+    console.log(x, y);
+    return x+y;
+}
+undefined
+typeof addition2;
+'function'
+addition2(10,20);
+VM264:2 10 20
+30
+function xyz(){
+    console.log("Xyz ");
+}
+undefined
+xyz();
+VM410:2 Xyz 
+undefined
+var e = new xyz();
+VM410:2 Xyz 
+undefined
+typeof e;
+'object'
+e instanceof xyz;
+true
+function xyz(){
+    console.log("Xyz ", this);
+}
+undefined
+xyz();
+VM551:2 Xyz  Window {window: Window, self: Window, document: document, name: '', location: Location, …}
+undefined
+var w = new xyz();
+VM551:2 Xyz  xyz {}
+undefined
+const e = ()=>console.log("Arrow");
+VM726:1 Uncaught SyntaxError: Identifier 'e' has already been declared
+const e1 = ()=>console.log("Arrow");
+undefined
+e1();
+VM730:1 Arrow
+undefined
+const gg = new e1();
+VM788:1 Uncaught TypeError: e1 is not a constructor
+    at <anonymous>:1:12
+(anonymous) @ VM788:1
+const e1 = ()=>console.log("Arrow ", this);
+undefined
+e1();
+VM866:1 Arrow  Window {window: Window, self: Window, document: document, name: '', location: Location, …}
+undefined
+var w = new e1();
+VM930:1 Uncaught TypeError: e1 is not a constructor
+    at <anonymous>:1:9
+(anonymous) @ VM930:1
+var obj = {
+    even:[],
+    odd:[],
+    arr:[10,9,20,3,50,70,11],
+    fillEvenOdd(){
+        this.arr.forEach(function(e){
+            if(e%2==0){
+                this.even.push(e);
+            }
+            else {
+                this.odd.push(e);
+            }
+        })
+    }
+}
+obj.fillEvenOdd();
+VM1197:8 Uncaught TypeError: Cannot read properties of undefined (reading 'push')
+    at <anonymous>:8:27
+    at Array.forEach (<anonymous>)
+    at Object.fillEvenOdd (<anonymous>:6:18)
+    at <anonymous>:16:5
+(anonymous) @ VM1197:8
+fillEvenOdd @ VM1197:6
+(anonymous) @ VM1197:16

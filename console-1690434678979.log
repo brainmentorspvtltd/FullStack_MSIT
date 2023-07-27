@@ -1,0 +1,98 @@
+var arr = [10,20,30,40,50];
+undefined
+for(let i = 0 ; i<arr.length; i++){
+console.log(arr[i]);
+}
+VM228:2 10
+VM228:2 20
+VM228:2 30
+VM228:2 40
+VM228:2 50
+undefined
+arr.forEach;
+ƒ forEach() { [native code] }
+arr.forEach();
+VM312:1 Uncaught TypeError: undefined is not a function
+    at Array.forEach (<anonymous>)
+    at <anonymous>:1:5
+(anonymous) @ VM312:1
+arr.forEach(console.log());
+VM368:1 Uncaught TypeError: undefined is not a function
+    at Array.forEach (<anonymous>)
+    at <anonymous>:1:5
+(anonymous) @ VM368:1
+arr.forEach(function(e){
+    console.log(e);
+});
+VM439:2 10
+VM439:2 20
+VM439:2 30
+VM439:2 40
+VM439:2 50
+undefined
+arr.forEach(function(e){
+    console.log('E is ', e);
+});
+VM462:2 E is  10
+VM462:2 E is  20
+VM462:2 E is  30
+VM462:2 E is  40
+VM462:2 E is  50
+undefined
+arr.forEach(e=>console.log('E is ', e));
+VM484:1 E is  10
+VM484:1 E is  20
+VM484:1 E is  30
+VM484:1 E is  40
+VM484:1 E is  50
+undefined
+var a= [[10,20],[30,40]];
+undefined
+a.forEach(e=>e.forEach(y=>console.log(y)));
+VM687:1 10
+VM687:1 20
+VM687:1 30
+VM687:1 40
+undefined
+arr;
+(5) [10, 20, 30, 40, 50]
+arr.findIndex(e=>e==30);
+2
+arr.filter(e=>e>=30);
+(3) [30, 40, 50]
+arr.filter(e=>e>=30).length;
+3
+arr.filter(function(e){
+   return e>=30;
+}).length;
+3
+var t = arr.filter(e=>true);
+undefined
+t;
+(5) [10, 20, 30, 40, 50]
+t== arr;
+false
+arr;
+(5) [10, 20, 30, 40, 50]
+arr = [10,20,30, 100,10,20,30,100,30,90];
+(10) [10, 20, 30, 100, 10, 20, 30, 100, 30, 90]
+arr = arr.filter(e=>e!=30)
+(7) [10, 20, 100, 10, 20, 100, 90]
+arr;
+(7) [10, 20, 100, 10, 20, 100, 90]
+arr.sort();
+(7) [10, 10, 100, 100, 20, 20, 90]
+arr.sort((a,b)=>a-b);
+(7) [10, 10, 20, 20, 90, 100, 100]
+arr.sort((a,b)=>b-a);
+(7) [100, 100, 90, 20, 20, 10, 10]
+var names = ["tim", "ram" ,"amit","shyam", "sohan"];
+undefined
+"tim" - "ram";
+NaN
+"tim".localeCompare("ram");
+1
+"ram".localeCompare("tim");
+-1
+"tim".localeCompare("tim");
+0
