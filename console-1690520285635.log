@@ -1,0 +1,42 @@
+var arr = [{id:1001, name:'Ram', salary:9999}, {id:1002, name:'Shyam',salary:4444}, {id:1003,name:'Tim' , salary:5555}];
+undefined
+var g = arr.filter(e=>true);
+undefined
+g == arr;
+false
+g[0].id=11111;
+11111
+g;
+(3) [{…}, {…}, {…}]0: {id: 11111, name: 'Ram', salary: 9999}1: {id: 1002, name: 'Shyam', salary: 4444}2: {id: 1003, name: 'Tim', salary: 5555}length: 3[[Prototype]]: Array(0)
+arr;
+(3) [{…}, {…}, {…}]0: {id: 11111, name: 'Ram', salary: 9999}1: {id: 1002, name: 'Shyam', salary: 4444}2: {id: 1003, name: 'Tim', salary: 5555}length: 3[[Prototype]]: Array(0)
+var e = arr.map(e=>e.salary + e.salary * 0.10);
+undefined
+e;
+(3) [10998.9, 4888.4, 6110.5]
+var prices  = [100,200,300,400];
+undefined
+prices.map(p=>`Rs ${price}`);
+VM549:1 Uncaught ReferenceError: price is not defined
+    at <anonymous>:1:21
+    at Array.map (<anonymous>)
+    at <anonymous>:1:8
+(anonymous) @ VM549:1
+(anonymous) @ VM549:1
+prices.map(p=>`Rs ${p}`);
+(4) ['Rs 100', 'Rs 200', 'Rs 300', 'Rs 400']
+prices;
+(4) [100, 200, 300, 400]
+prices.reduce((total, p)=>total+p,0);
+1000
+prices.reduce((total, p)=>total+p,0);
+1000
+arr;
+(3) [{…}, {…}, {…}]0: {id: 11111, name: 'Ram', salary: 9999}1: {id: 1002, name: 'Shyam', salary: 4444}2: {id: 1003, name: 'Tim', salary: 5555}length: 3[[Prototype]]: Array(0)
+arr.reduce((subArray, currentObject)=>{
+    if(currentObject.salary>5000){
+        subArray.push(currentObject);
+    }
+    return subArray;
+},[]);
+(2) [{…}, {…}]0: {id: 11111, name: 'Ram', salary: 9999}1: {id: 1003, name: 'Tim', salary: 5555}length: 2[[Prototype]]: Array(0)
