@@ -1,0 +1,30 @@
+const promise = fetch('https://gist.githubusercontent.com/kshirsagarps/36fade16fa39202715656ef487aaf7b0/raw/2b682e589ef283f06be42d2799dfa54f57794a6e/Pizza.json');
+
+undefined
+promise;
+Promise {<fulfilled>: Response}
+const promise = fetch('https://gist.githubusercontent.com/kshirsagarps/36fade16fa39202715656ef487aaf7b0/raw/2b682e589ef283f06be42d2799dfa54f57794a6e/Pizza.json');
+promise;
+
+Promise {<pending>}
+promise;
+Promise {<fulfilled>: Response}
+const promise = fetch('https://gist.githubusercontent.com/kshirsagarps/36fade16fa39202715656ef487aaf7b0/raw/2b682e589ef283f06be42d2799dfa54f57794a6e/Pizza.json');
+console.log('Promise is ',promise);
+promise.then(response=>{
+    console.log('Data Comes ', response);
+}.catch(err=>console.log('Error is ',err));
+console.log('Code Ends ');
+
+VM462:5 Uncaught SyntaxError: missing ) after argument list
+const promise = fetch('https://gist.githubusercontent.com/kshirsagarps/36fade16fa39202715656ef487aaf7b0/raw/2b682e589ef283f06be42d2799dfa54f57794a6e/Pizza.json');
+console.log('Promise is ',promise);
+promise.then(response=>{
+    console.log('Data Comes ', response);
+}).catch(err=>console.log('Error is ',err));
+console.log('Code Ends ');
+
+VM465:2 Promise is  Promise {<pending>}
+VM465:6 Code Ends 
+undefined
+VM465:4 Data Comes  Response {type: 'cors', url: 'https://gist.githubusercontent.com/kshirsagarps/36…682e589ef283f06be42d2799dfa54f57794a6e/Pizza.json', redirected: false, status: 200, ok: true, …}
