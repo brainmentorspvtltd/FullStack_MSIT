@@ -1,0 +1,24 @@
+Calculator Application
+Step-1 Generate Calculator Project and run it
+npx create-react-app calcapp
+cd calcapp
+npm start
+
+Step-2 Identify the components and build pages and components folder
+And place the appropriate components inside the folders.
+
+Components can be Button, Output and CalculatorPage Component
+
+Step-3 Developing the component
+Button Component contains the HTML Button , and click event attach
+Output Component also contains the event so user can type and it can take expression 
+If u identify all the buttons just do direct printing on output component, except = button , it do calculation before printing.
+Note: printing (re-rendering) only when state change.
+
+Step-4 Component need to communicate each other.
+In our case Button click share the data to the output component.
+Note : Data share using props only.
+
+Step-5 Calculation 
+Hint : you can use eval function of JS to evaluate the math expression
+Once expression is eval then re-render it.
