@@ -1,0 +1,4 @@
+{
+	"question": "WAP to Compute Prime Number",
+	"skeletoncode": "class A{\n public int computePrime(int number){\n return 0; \n}  \n }"
+}
